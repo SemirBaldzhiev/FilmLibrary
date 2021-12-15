@@ -1,9 +1,16 @@
 ﻿namespace FilmLibrary.Core.Services.Movies
 {
+    using FilmLibrary.Core.Services.Models;
     using System;
+    using System.Collections.Generic;
 
     public interface IMovieService
     {
+        MovieQueryServiceModel All(string title = null,
+            string searchTerm = null,
+            int currentPage = 1,
+            int carsPerPage = int.MaxValue);
+
         int Create(string title,
             string description,
             int directorId,
