@@ -17,4 +17,8 @@
     <ProjectReference Include="..\FilmLibrary.Data\FilmLibrary.Data.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Movie\" />
+  </ItemGroup>
+
 </Project>
